@@ -1,0 +1,5 @@
+sudo make -j 15
+sudo make modules_install -j 15
+sudo make install -j 15
+sudo update-initramfs -c -k 5.18.8
+sudo update-grub -o /boot/efi/EFI/ubuntu/grub.cfg
